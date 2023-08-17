@@ -257,16 +257,16 @@ div.bio>button:hover{
 }
 /* main */
 
-div.content>div.pinned-items{
+div.content>section.pinned-items{
     margin: 10px 20px;
 }
 
-div.pinned-items>ul{
+section.pinned-items>ul{
     list-style: none;
     padding: 0;
 }
 
-div.pinned-items>ul>li{
+section.pinned-items>ul>li{
     border: 1px solid var(--border);
     padding: 16px;
     border-radius: 6px;
@@ -275,7 +275,7 @@ div.pinned-items>ul>li{
     width: 85vw;
 }
 
-div.pinned-items>ul>li>span{
+section.pinned-items>ul>li>span{
     color: var(--secondary-text);
     border: 1px solid var(--border);
     padding: 4px 5px;
@@ -285,25 +285,25 @@ div.pinned-items>ul>li>span{
     display: inline-block;
 }
 
-div.pinned-items>ul>li>p{
+section.pinned-items>ul>li>p{
     color: var(--secondary-text);
     font-size: 12px;
 }
 
-div.pinned-items>ul>li>a{
+section.pinned-items>ul>li>a{
     color: var(--link);
 }
 
-div.pinned-items>ul>li>a:hover{
+section.pinned-items>ul>li>a:hover{
     text-decoration: underline;
 }
 
-div.pinned-items>ul>li>div>span{
+section.pinned-items>ul>li>div>span{
     color: var(--secondary-text);
     font-size: 12px;
 }
 
-div.pinned-items>ul>li>div>a{
+section.pinned-items>ul>li>div>a{
     font-size: 12px;
     align-items: center;
     justify-content: center;
@@ -312,15 +312,15 @@ div.pinned-items>ul>li>div>a{
     color: var(--secondary-text);
 }
 
-div.pinned-items>ul>li>div>a:hover{
+section.pinned-items>ul>li>div>a:hover{
     color: var(--link);
 }
 
-div.pinned-items>ul>li>div{
+section.pinned-items>ul>li>div{
     display: flex;
 }
 
-div.pinned-items>ul>li>div>span>span.repo-color{
+section.pinned-items>ul>li>div>span>span.repo-color{
     background-color: rgb(25, 159, 75);
     width: 10px;
     height: 10px;
