@@ -10,12 +10,12 @@
     --secondary-text:rgb(139, 148, 158);
     --link:rgb(88, 166, 255);
     --desktop:rgb(13, 17, 23);
-    --button:rgb(39, 45, 52);
+    --button:rgb(33, 38, 45);
 }
 
 /* styles */
 body{
-    background-color:var(--secondary);
+    background-color:var(--mobile);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
     overflow-x: hidden;
     width: 100vw;
@@ -40,6 +40,10 @@ header {
 
 div.h-top{
     display: flex;
+}
+
+header>div.h-top>div.h-end> div.h-actions{
+    display: none;
 }
 
 div.h-start{
@@ -165,4 +169,547 @@ span.quantity{
     margin-inline-start: 8px;
 }
 
+/* aside */
+aside{
+    margin: 40px 20px;
+    flex: 0;
+}
+
+aside>div.name-description>div>h1{
+    color: var(--main-text);
+    font-weight: 500;
+    font-size: 24px;
+    margin: 5px 0;
+}
+
+div.name-description{
+    display: flex;
+}
+
+div.name-description>div{
+    align-self: center;
+    margin-inline-start: 20px;
+}
+
+aside>div.name-description>img{
+    border-radius: 50%;
+    width: 15vw;
+}
+
+aside>div.name-description>div>span{
+    color: var(--secondary-text);
+    font-size: 20px;
+}
+
+div.bio>p{
+    color: var(--main-text);
+}
+
+div.bio>ul{
+    list-style: none;
+    display: flex;
+    padding-inline-start: 0;
+}
+
+div.bio>ul>li{
+    padding: 3px;
+}
+
+div.bio>div.followers>a{
+    color: var(--secondary-text);
+    align-items: center;
+    display: flex;
+}
+
+div.bio>ul>li>a:hover{
+    color: var(--link);
+    text-decoration: underline;
+}
+
+div.followers{
+    display: flex;
+    gap: 5px;
+}
+
+div.bio>div.followers>a>span{
+    color: var(--main-text);
+    padding: 0 5px;
+}
+
+div.bio>div.followers>a:hover , div.bio>div.followers>a>span:hover {
+    color: var(--link);
+}
+
+div.bio>button{
+    background-color: var(--button);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--main-text);
+    width: 90vw;
+    padding: 7px;
+    margin: 15px 0 10px 0;
+}
+
+div.bio>button:hover{
+    cursor: pointer;
+    background-color:rgb(51, 56, 65) ;
+    border: 1px solid rgb(142, 146, 153)  ;
+}
 /* main */
+
+div.content>div.pinned-items{
+    margin: 10px 20px;
+}
+
+div.pinned-items>ul{
+    list-style: none;
+    padding: 0;
+}
+
+div.pinned-items>ul>li{
+    border: 1px solid var(--border);
+    padding: 16px;
+    border-radius: 6px;
+    margin: 20px 0;
+    line-height: 8px;
+    width: 85vw;
+}
+
+div.pinned-items>ul>li>span{
+    color: var(--secondary-text);
+    border: 1px solid var(--border);
+    padding: 4px 5px;
+    border-radius: 24px;
+    font-size: 12px;
+    align-self: center;
+    display: inline-block;
+}
+
+div.pinned-items>ul>li>p{
+    color: var(--secondary-text);
+    font-size: 12px;
+}
+
+div.pinned-items>ul>li>a{
+    color: var(--link);
+}
+
+div.pinned-items>ul>li>a:hover{
+    text-decoration: underline;
+}
+
+div.pinned-items>ul>li>div>span{
+    color: var(--secondary-text);
+    font-size: 12px;
+}
+
+div.pinned-items>ul>li>div>a{
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-inline-start: 10px;
+    color: var(--secondary-text);
+}
+
+div.pinned-items>ul>li>div>a:hover{
+    color: var(--link);
+}
+
+div.pinned-items>ul>li>div{
+    display: flex;
+}
+
+div.pinned-items>ul>li>div>span>span.repo-color{
+    background-color: rgb(25, 159, 75);
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+/* recent-chart */
+
+div.recent-chart{
+    padding: 20px;
+}
+
+div.recent-chart>h2{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--main-text);
+}
+
+div.recent-chart>div{
+    border: 1px solid var(--border);
+    border-radius: 6px;
+}
+
+div.recent-chart>div>div>table{
+    width: max-content;
+    border-collapse: separate;
+    border-spacing: 3px;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+div.recent-chart>div>div>table>thead{
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+
+div.recent-chart>div>div>table>thead>tr>td>span{
+    color: var(--main-text);
+    font-size: 12px;
+}
+
+div.recent-chart>div>div>table>tbody>tr{
+    height: 10px;
+}
+
+div.recent-chart>div>div>table>tbody>tr>td{
+    width: 10px;
+    height: 10px;
+    background-color: black;
+}
+
+div.company-links{
+    display: flex;
+    justify-content: center;
+}
+
+div.company-links>span{
+    display: flex;
+    padding: 5px;
+    color: var(--main-text);
+    font-size: 12px;
+    align-items: center;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    margin: 5px;
+}
+
+div.company-links>span>img{
+    width: 20px;
+    padding-inline-end: 5px;
+}
+
+div.activity-overview{
+    padding: 20px;
+}
+
+div.activity-overview>span{
+    font-size: 14px;
+    color: var(--main-text);
+}
+
+div.activity-overview>span>a{
+    font-size: 14px;
+    color: var(--link);
+}
+
+/* main-contributions */
+
+div.contributions{
+    margin: 20px;
+}
+
+div.contributions>h3{
+    color: var(--secondary-text);
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+div.contributions>h3>span.border-contributions{
+    background-color: var(--border);
+    width: 75vw;
+    height: 1px;
+    display: block;
+    margin-inline-start: 20px;
+}
+
+span.svg{
+    fill: var(--svg);
+    position: absolute;
+    top:45px;
+    margin-inline-start: -12px;
+    border-radius: 50%;
+    background-color: var(--button);
+    width: 16px;
+    height: 16px;
+    display: flex;
+    padding: 5px;
+    box-shadow:1px 2px 2px rgb(13, 17, 23);
+}
+
+div.contributions>span{
+    color: var(--main-text);
+}
+
+div.contributions>details>summary>span{
+    color: var(--main-text);
+    margin: 10px 20px;
+    display: block; 
+    padding-top: 20px;
+}
+
+div.contributions>details>summary>span:hover{
+    color: var(--link);
+    cursor: pointer;
+}
+
+div.contributions>details>ul{
+    list-style: none;
+    line-height: 20px;
+    padding-inline-start: 20px;
+}
+
+div.contributions>details>ul>li>div{
+    display: flex;
+    justify-content: space-between;
+    margin-inline-end: 20px;
+}
+
+div.contributions>details>ul>li>div>span{
+    width: 85px;
+    height: 8px;
+    background-color: rgb(48, 161, 78);
+    display: block;
+    border-radius: 24px;
+}
+
+div.contributions>details>ul>li>div>a{
+    color: var(--link);
+    display: block;
+}
+
+div.contributions>details>ul>li>a:hover{
+    text-decoration: underline;
+}
+
+div.contributions>details>ul>li>span{
+    font-size: 14px;
+    color: var(--secondary-text);
+}
+
+div.contributions>details>ul>li>span:hover{
+    color: var(--link);
+    cursor: pointer;
+}
+
+div.contributions{
+    border-inline-start: 1px solid rgb(33, 38, 45);
+    
+}
+
+div.contributions>details>summary{
+    list-style: none;
+}
+
+div.contributions>div>span{
+    display: block;
+    padding-inline-start: 20px;
+}
+
+div.achivement>svg{
+    margin:  0 5px;
+    
+}
+
+div.achivement{
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    margin: 20px;
+}
+
+div.achivement>a{
+    font-size: 20px;
+}
+
+div.achivement>p{
+    color: var(--secondary-text);
+    font-size: 14px;
+}
+
+details.third-contribute>summary{
+    list-style: none;
+    color: var(--main-text);
+    padding: 20px;
+}
+
+details.third-contribute>a{
+    color: var(--link);
+    margin-inline-start: 20px;
+}
+
+details.third-contribute>span{
+    color: var(--secondary-text);
+}
+
+details.third-contribute>span>span{
+    background-color: rgb(137, 87, 229);
+     color: var(--main-text); 
+     padding: 0 6px;
+      border-radius: 24px; 
+      font-size: 12px;
+}
+
+details.third-contribute>summary:hover{
+    color: var(--link);
+    cursor: pointer;
+}
+
+div.span-blocks{
+    display: flex;
+    gap: 1px;
+}
+
+details.forth-contribute{
+    padding: 20px;
+}
+
+details.forth-contribute>summary{
+    list-style: none;
+    color: var(--main-text);
+    padding: 10px 0;
+}
+
+details.forth-contribute>div{
+    display: flex;
+    justify-content: space-between;
+    line-height: 20px;
+    align-items: center;
+}
+
+details.forth-contribute>div>a{
+    color: var(--link);
+}
+
+details.forth-contribute>div>span{
+    color: var(--secondary-text);
+    font-size: 14px;
+}
+
+details.fifth-contribute{
+    padding: 20px;
+    line-height: 25px;
+}
+
+details.fifth-contribute>summary{
+    list-style: none;
+    color: var(--main-text);
+}
+
+details.fifth-contribute>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+details.fifth-contribute>div>span{
+    color: var(--secondary-text);
+    font-size: 12px;
+
+}
+
+span.whatever{
+    color: var(--secondary-text);
+    font-size: 12px;   
+}
+
+span.whatever>span , span.whatever>span>span{    
+    padding: 0 6px;
+    border-radius: 24px;
+}
+
+div.content>button{
+    background-color: var(--mobile);
+    color: var(--link);
+    font-size: 12px;
+    width: 90vw;
+    padding: 10px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    margin: 20px 0;
+    margin-inline-start: 20px;
+}
+
+div.content>button:hover{
+    cursor: pointer;
+    background-color: var(--button);
+}
+
+div.content>p{
+    color: var(--secondary-text);
+    font-size: 12px;
+    margin-inline-start: 20px;
+}
+
+div.content>p>a{
+    color: var(--link);
+    font-size: 12px;
+}
+
+div.content>p>a:hover{
+    text-decoration: underline;
+}
+
+/* footer */
+
+footer{
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+    border-top: 1px solid rgb(33, 38, 45);
+    width: 90vw;
+    margin: 50px 5vw;
+}
+
+footer>nav>ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    line-height: 0;
+    margin-top: 60px;
+}
+
+footer>nav>ul>li>a{
+    color: var(--link);
+    font-size: 12px;
+}
+
+footer>nav>ul>li>a:hover{
+    text-decoration: underline;
+}
+
+footer>nav>div{
+    display: flex;
+    justify-content: center
+}
+
+footer>nav>div>a{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--svg);
+}
+
+/* responsive design */
+
+@media screen and (min-width:800px) {
+    aside>img{
+        border-radius: 50%;
+        width: 300px;
+        
+    }
+}
